@@ -28,20 +28,38 @@ body {
 body header {
   height: 5vw;
 }
-body .row div button {
+body .row div div button {
   margin: 2vw auto;
   background-color: #a3a5ae;
   color: #fafafa;
   font-size: 0.8rem;
   font-weight: 400;
   border: none;
-  border-radius: 2px;
+  border-radius: 0.25vw;
   height: 6vw;
   width: 18vw;
 }
-body .row div p {
+body .row div div p {
   font-size: 0.8rem;
   font-weight: 400;
+}
+body .row div div .change-color:hover {
+  background-color: #4c4e61;
+}
+body .row div div .outline-button {
+  background-color: #fafafa;
+  border: 2px solid #a3a5ae;
+  color: #a3a5ae;
+}
+body .row div div .outline-button:hover {
+  background-color: #a3a5ae;
+  color: #fafafa;
+}
+body .row div div .shift-down:hover {
+  transform: translateY(1vw);
+}
+body .row div div .shift-right:hover {
+  transform: translateX(1vw);
 }
 
 /*# sourceMappingURL=compiled.css.map */

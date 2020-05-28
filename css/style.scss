@@ -31,23 +31,54 @@ body {
     background-color: $light-grey;
     text-align: center;
     padding: 5%;
-    
+
     header {
         height: 5vw;
     }
-    .row div button {
+
+    .row div div button {
         margin: 2vw auto;
         background-color: $greyish-blue;
         color: $light-grey;
         font-size: 0.8rem;
         font-weight: $fontWeight * 4;
         border: none;
-        border-radius: 2px;
+        border-radius: 0.25vw;
         height: 6vw;
         width: 18vw;
     }
-    .row div p {
+
+    .row div div p {
         font-size: 0.8rem;
         font-weight: $fontWeight * 4;
+    }
+
+    .row div div .change-color {
+        &:hover {
+            background-color: $dark-blue;
+        }
+    }
+
+    .row div div .outline-button {
+        background-color: $light-grey;
+        border: 2px solid $greyish-blue;
+        color: $greyish-blue;
+
+        &:hover {
+            background-color: $greyish-blue;
+            color: $light-grey;
+        }
+    }
+
+    .row div div .shift-down {
+        &:hover {
+            transform: translateY(1vw);
+        }
+    }
+
+    .row div div .shift-right {
+        &:hover {
+            transform: translateX(1vw);
+        }
     }
 }
