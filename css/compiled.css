@@ -1,0 +1,47 @@
+.col-1 {
+  width: 33.3333333333%;
+  float: left;
+}
+
+.col-2 {
+  width: 33.3333333333%;
+  float: left;
+}
+
+.col-3 {
+  width: 33.3333333333%;
+  float: left;
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #fafafa;
+  text-align: center;
+  padding: 5%;
+}
+body header {
+  height: 5vw;
+}
+body .row div button {
+  margin: 2vw auto;
+  background-color: #a3a5ae;
+  color: #fafafa;
+  font-size: 0.8rem;
+  font-weight: 400;
+  border: none;
+  border-radius: 2px;
+  height: 6vw;
+  width: 18vw;
+}
+body .row div p {
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+
+/*# sourceMappingURL=compiled.css.map */

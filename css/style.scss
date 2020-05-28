@@ -1,0 +1,53 @@
+//colors code
+$dark-blue: #4c4e61;
+$greyish-blue: #a3a5ae;
+$light-grey: #fafafa;
+$pale-yellow: #ffff00;
+
+//grid system
+$gridNum: 3;
+
+@for $i from 1 through $gridNum {
+    .col-#{$i} {
+        width: (100% / $gridNum);
+        float: left;
+    }
+}
+
+//font
+$mainFont: 'Poppins',
+sans-serif;
+$fontSize: 16px;
+$fontWeight: 100;
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $mainFont;
+    background-color: $light-grey;
+    text-align: center;
+    padding: 5%;
+    
+    header {
+        height: 5vw;
+    }
+    .row div button {
+        margin: 2vw auto;
+        background-color: $greyish-blue;
+        color: $light-grey;
+        font-size: 0.8rem;
+        font-weight: $fontWeight * 4;
+        border: none;
+        border-radius: 2px;
+        height: 6vw;
+        width: 18vw;
+    }
+    .row div p {
+        font-size: 0.8rem;
+        font-weight: $fontWeight * 4;
+    }
+}
