@@ -28,7 +28,7 @@ body {
 body header {
   height: 5vw;
 }
-body .row div div button {
+body .row div div .button {
   margin: 2vw auto;
   background-color: #a3a5ae;
   color: #fafafa;
@@ -38,6 +38,9 @@ body .row div div button {
   border-radius: 0.25vw;
   height: 6vw;
   width: 18vw;
+}
+body .row div div .button .fa {
+  font-size: 25px;
 }
 body .row div div p {
   font-size: 0.8rem;
@@ -73,6 +76,24 @@ body .row div div .shift-down:hover {
 }
 body .row div div .shift-right:hover {
   transform: translateX(1vw);
+}
+body .row div div .notification {
+  position: relative;
+}
+body .row div div .badge {
+  background-color: #ff4d4d;
+  color: #fafafa;
+  position: absolute;
+  top: -16px;
+  right: 10px;
+  width: 32px;
+  padding: 8px;
+  border-radius: 20px;
+  font-size: 14px;
+}
+body .row div div .badge:hover {
+  opacity: 0;
+  transition: 200ms;
 }
 
 /*# sourceMappingURL=compiled.css.map */

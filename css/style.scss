@@ -3,6 +3,8 @@ $dark-blue: #4c4e61;
 $greyish-blue: #a3a5ae;
 $light-grey: #fafafa;
 $pale-yellow: #ffff00;
+$red: #ff4d4d;
+$dark-red: #e60000;
 
 //grid system
 $gridNum: 3;
@@ -36,63 +38,95 @@ body {
         height: 5vw;
     }
 
-    .row div div button {
-        margin: 2vw auto;
-        background-color: $greyish-blue;
-        color: $light-grey;
-        font-size: 0.8rem;
-        font-weight: $fontWeight * 4;
-        border: none;
-        border-radius: 0.25vw;
-        height: 6vw;
-        width: 18vw;
-    }
+    .row {
+        div {
+            div {
+                .button {
+                    margin: 2vw auto;
+                    background-color: $greyish-blue;
+                    color: $light-grey;
+                    font-size: 0.8rem;
+                    font-weight: $fontWeight * 4;
+                    border: none;
+                    border-radius: 0.25vw;
+                    height: 6vw;
+                    width: 18vw;
 
-    .row div div p {
-        font-size: 0.8rem;
-        font-weight: $fontWeight * 4;
-    }
+                    .fa {
+                        font-size: 25px;
+                    }
+                }
 
-    .row div div .fade-in {
-        background-color: $dark-blue;
-        opacity: 0.5;
+                p {
+                    font-size: 0.8rem;
+                    font-weight: $fontWeight * 4;
+                }
 
-        &:hover {
-            opacity: 1;
-            transition: 250ms;
-        }
-    }
-    
-    .row div div .fade-out {
-        background-color: $dark-blue;
-        opacity: 1;
+                .fade-in {
+                    background-color: $dark-blue;
+                    opacity: 0.5;
 
-        &:hover {
-            opacity: 0.5;
-            transition: 250ms;
-        }
-    }
+                    &:hover {
+                        opacity: 1;
+                        transition: 250ms;
+                    }
+                }
 
-    .row div div .outline-button {
-        background-color: $light-grey;
-        border: 2px solid $greyish-blue;
-        color: $greyish-blue;
+                .fade-out {
+                    background-color: $dark-blue;
+                    opacity: 1;
 
-        &:hover {
-            background-color: $greyish-blue;
-            color: $light-grey;
-        }
-    }
+                    &:hover {
+                        opacity: 0.5;
+                        transition: 250ms;
+                    }
+                }
 
-    .row div div .shift-down {
-        &:hover {
-            transform: translateY(1vw);
-        }
-    }
+                .outline-button {
+                    background-color: $light-grey;
+                    border: 2px solid $greyish-blue;
+                    color: $greyish-blue;
 
-    .row div div .shift-right {
-        &:hover {
-            transform: translateX(1vw);
+                    &:hover {
+                        background-color: $greyish-blue;
+                        color: $light-grey;
+                    }
+                }
+
+                .shift-down {
+                    &:hover {
+                        transform: translateY(1vw);
+                    }
+                }
+
+                .shift-right {
+                    &:hover {
+                        transform: translateX(1vw);
+                    }
+                }
+
+                .notification {
+                    position: relative;
+                }
+
+                .badge {
+                    background-color: $red;
+                    color: $light-grey;
+                    position: absolute;
+                    top: -16px;
+                    right: 10px;
+                    width: 32px;
+                    padding: 8px;
+                    border-radius: 20px;
+                    font-size: 14px;
+
+                    &:hover {
+                        //background-color: $dark-red;
+                        opacity: 0;
+                        transition: 200ms;
+                    }
+                }
+            }
         }
     }
 }
