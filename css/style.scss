@@ -53,9 +53,23 @@ body {
         font-weight: $fontWeight * 4;
     }
 
-    .row div div .change-color {
+    .row div div .fade-in {
+        background-color: $dark-blue;
+        opacity: 0.5;
+
         &:hover {
-            background-color: $dark-blue;
+            opacity: 1;
+            transition: 250ms;
+        }
+    }
+    
+    .row div div .fade-out {
+        background-color: $dark-blue;
+        opacity: 1;
+
+        &:hover {
+            opacity: 0.5;
+            transition: 250ms;
         }
     }
 

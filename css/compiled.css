@@ -43,8 +43,21 @@ body .row div div p {
   font-size: 0.8rem;
   font-weight: 400;
 }
-body .row div div .change-color:hover {
+body .row div div .fade-in {
   background-color: #4c4e61;
+  opacity: 0.5;
+}
+body .row div div .fade-in:hover {
+  opacity: 1;
+  transition: 250ms;
+}
+body .row div div .fade-out {
+  background-color: #4c4e61;
+  opacity: 1;
+}
+body .row div div .fade-out:hover {
+  opacity: 0.5;
+  transition: 250ms;
 }
 body .row div div .outline-button {
   background-color: #fafafa;
