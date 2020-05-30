@@ -52,8 +52,8 @@ body {
                     height: 6vw;
                     width: 18vw;
 
-                    .fa {
-                        font-size: 25px;
+                    .fa-facebook {
+                        font-size: 24px;
                     }
                 }
 
@@ -95,13 +95,15 @@ body {
 
                 .shift-down {
                     &:hover {
-                        transform: translateY(1vw);
+                        transform: translateY(1.5vw);
+                        transition: 250ms;
                     }
                 }
 
                 .shift-right {
                     &:hover {
-                        transform: translateX(1vw);
+                        transform: translateX(1.5vw);
+                        transition: 250ms;
                     }
                 }
 
@@ -126,6 +128,34 @@ body {
                         transition: 200ms;
                     }
                 }
+
+                .next-button {
+                    .fa {
+                        font-size: 22px;
+                    }
+
+                    &:hover {
+                        .fa {
+                            transform: translateX(10px);
+                            transition: 250ms;
+                        }
+                    }
+                }
+                
+                .previous-button {
+                    .fa {
+                        font-size: 22px;
+                    }
+
+                    &:hover {
+                        .fa {
+                            transform: translateX(-10px);
+                            transition: 250ms;
+                        }
+                    }
+                }
+                
+
             }
         }
     }

@@ -39,8 +39,8 @@ body .row div div .button {
   height: 6vw;
   width: 18vw;
 }
-body .row div div .button .fa {
-  font-size: 25px;
+body .row div div .button .fa-facebook {
+  font-size: 24px;
 }
 body .row div div p {
   font-size: 0.8rem;
@@ -72,10 +72,12 @@ body .row div div .outline-button:hover {
   color: #fafafa;
 }
 body .row div div .shift-down:hover {
-  transform: translateY(1vw);
+  transform: translateY(1.5vw);
+  transition: 250ms;
 }
 body .row div div .shift-right:hover {
-  transform: translateX(1vw);
+  transform: translateX(1.5vw);
+  transition: 250ms;
 }
 body .row div div .notification {
   position: relative;
@@ -94,6 +96,20 @@ body .row div div .badge {
 body .row div div .badge:hover {
   opacity: 0;
   transition: 200ms;
+}
+body .row div div .next-button .fa {
+  font-size: 22px;
+}
+body .row div div .next-button:hover .fa {
+  transform: translateX(10px);
+  transition: 250ms;
+}
+body .row div div .previous-button .fa {
+  font-size: 22px;
+}
+body .row div div .previous-button:hover .fa {
+  transform: translateX(-10px);
+  transition: 250ms;
 }
 
 /*# sourceMappingURL=compiled.css.map */
