@@ -123,7 +123,6 @@ body {
                     font-size: 14px;
 
                     &:hover {
-                        //background-color: $dark-red;
                         opacity: 0;
                         transition: 200ms;
                     }
@@ -141,7 +140,7 @@ body {
                         }
                     }
                 }
-                
+
                 .previous-button {
                     .fa {
                         font-size: 22px;
@@ -154,8 +153,72 @@ body {
                         }
                     }
                 }
-                
 
+                .sweep-down {
+                    position: relative;
+                    transform: perspective(1px) translateZ(0);
+                    transition: 750ms;
+
+                    &:hover {
+                        color: $greyish-blue;
+                    }
+
+                    &:hover::before {
+                        transform: scaleY(1);
+                    }
+                }
+
+                .sweep-down::before {
+                    background-color: $light-grey;
+                    border-radius: 0.25vw;
+
+                    position: absolute;
+                    content: "";
+                    display: block;
+                    top: 0;
+                    left: 0;
+                    bottom: 0;
+                    right: 0;
+                    z-index: -1;
+
+                    transform: scaleY(0);
+                    transform-origin: 50% 0;
+                    transition: 250ms;
+                }
+
+                .sweep-right {
+                    position: relative;
+                    transform: perspective(1px) translateZ(0);
+                    transition: 750ms;
+
+                    &:hover {
+                        color: $greyish-blue;
+                    }
+
+                    &:hover::before {
+                        transform: scaleX(1);
+                    }
+                }
+
+                .sweep-right::before {
+                    background-color: $light-grey;
+                    border-radius: 0.25vw;
+
+                    position: absolute;
+                    content: "";
+                    display: block;
+                    top: 0;
+                    left: 0;
+                    bottom: 0;
+                    right: 0;
+                    z-index: -1;
+
+                    transform: scaleX(0);
+                    transform-origin: 0 50%;
+                    transition: 250ms;
+                }
+                
+                
             }
         }
     }
