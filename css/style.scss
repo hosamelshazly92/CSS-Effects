@@ -217,8 +217,30 @@ body {
                     transform-origin: 0 50%;
                     transition: 250ms;
                 }
-                
-                
+
+                .grow-button {
+                    position: relative;
+
+                    &:hover::before {
+                        transform: scale(1.1);
+                    }
+                }
+
+                .grow-button::before {
+                    background-color: $greyish-blue;
+                    border-radius: 0.25vw;
+
+                    position: absolute;
+                    content: "";
+                    display: block;
+                    top: 0;
+                    left: 0;
+                    bottom: 0;
+                    right: 0;
+                    z-index: -1;
+
+                    transition: 350ms;
+                }
             }
         }
     }
