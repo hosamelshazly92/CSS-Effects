@@ -182,5 +182,28 @@ body .row div div .grow-button::before {
   z-index: -1;
   transition: 350ms;
 }
+body .row div div .shrink-button {
+  position: relative;
+}
+body .row div div .shrink-button:hover::before {
+  transform: scale(0.9);
+}
+body .row div div .shrink-button::before {
+  height: 6vw;
+  width: 18vw;
+  background-color: #a3a5ae;
+  border-radius: 0.25vw;
+  position: absolute;
+  content: "";
+  display: block;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  transform: scale(1.1);
+  transform-origin: 50% 50%;
+  transition: 550ms;
+}
 
 /*# sourceMappingURL=compiled.css.map */
